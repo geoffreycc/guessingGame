@@ -35,8 +35,8 @@
     </div>
     <script type="text/javascript">
 
-    //need to add something to convert all of the answers to lower case characters!!!!!!
-
+    //need to add something to convert all of the answers to lower case characters!!!!!!(Might actually have to switch these to yes or no questions)
+    //May need to add back in the "What is your name?" question.
       var firstQuestion = ("Where am I from?"); //Creates the firstQuestion variable which is the question that will be asked.
       var firstAnswer = prompt(firstQuestion); //Creates the firstAnswer variable that equals the answer to the firstQuestion.
       var homeTown = ("redmond"); //Creates the homeTown variable that will be compared to firstAnswer.
@@ -50,10 +50,10 @@
 
       var secondQuestion = ("What is one of my goals?");//Creates the secondQuestion variable which is the second question to be asked.
       var secondAnswer = prompt(secondQuestion);//Causes the second question to appear on screen and saves the user input to secondAnswer.
-      var goalOne = ("learn a new skill");
-      var goalTwo = ("find better employment");
-      var goalThree = ("improve life style");
-      if (secondAnswer === goalOne){ //Is only working for goalOne
+      var goalOne = ("learn a new skill");//defines variable goalOne with the vaule of "learn a new skill"
+      var goalTwo = ("find better employment");//defines variable goalTwo with the value of "find better employment"
+      var goalThree = ("improve life style");//definges variable goalThree with the value of "improve lifestyle"
+      if (secondAnswer === goalOne){
         alert("Yup! '" + secondAnswer + "' is one of my goals.");
       }else if (secondAnswer === goalTwo){
         alert("Cool! '" + secondAnswer + " ' is one of my goals.");

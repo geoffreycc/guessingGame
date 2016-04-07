@@ -48,6 +48,8 @@
     </div>
     <script type="text/javascript">
 
+    //need to add something to convert all of the answers to lower case characters!!!!!!
+
       var firstQuestion = ("Where am I from?"); //Creates the firstQuestion variable which is the question that will be asked.
       var firstAnswer = prompt(firstQuestion); //Creates the firstAnswer variable that equals the answer to the firstQuestion.
       var homeTown = ("redmond"); //Creates the homeTown variable that will be compared to firstAnswer.
@@ -73,6 +75,20 @@
       }else{
         alert("Oh no! It looks like '" + secondAnswer + "' is not one of my goals.");
       };
+
+      var thirdQuestion = ("Where did I go to school?");
+      var thirdAnswer = prompt(thirdQuestion);
+      var schoolOne = ("bellevue college");
+      var schoolTwo = ("academy of art university");
+      if (thirdAnswer === schoolOne){
+        alert("Good old " + thirdAnswer + ". Feels like it was only yesterday.");
+      }else if(thirdAnswer === schoolTwo){
+        alert(thirdAnswer + ". Go urbanites!")
+      }else{
+        alert("Sorry, I don't remember attending " + thirdAnswer + ".");
+      };
+
+
 
 
 

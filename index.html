@@ -59,6 +59,18 @@
         alert("Sorry, that is not the correct answer.");//Message that will displayed when an incorrect answer is given.
       };
 
+      var secondQuestion = ("What is one of my goals?");
+      var secondAnswer = prompt(secondQuestion);
+      var goalOne = ("learn a new skill");
+      var goalTwo = ("find better employment");
+      var goalThree = ("improve life style");
+
+      if (secondAnswer === goalOne){ //Is only working for goalOne
+        alert("Yup! '" + secondAnswer + "' is one of my goals.");
+      }else{
+        alert("Oh no! It looks like '" + secondAnswer + "' is not one of my goals.");
+      };
+
 
     </script>
   </body>

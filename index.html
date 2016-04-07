@@ -88,10 +88,19 @@
         alert("Sorry, I don't remember attending " + thirdAnswer + ".");
       };
 
+      var fourthQuestion = ("How old am I?");
+      var age = prompt(fourthQuestion);
+      if (age === '29'){
+        alert("That's right I am " + age + " years old.");
+      }else if (age < '29'){
+        alert("Sorry, " + age + " is too young.");
+      }else if (age > '29'){
+        alert("Sorry, " + age + " is too old.");
+      }else{
+        alert("Sorry, it looks like '" + age + "' was not recognized.");//This is not running. Strings are equalling to older than '29'.
+      };
 
-
-
-
+      //{If you want to extend this assignment, add a fourth question that takes a numeric input and then indicates to the user whether the answer is correct, too high, or too low. This part is not necessary for today, though... we'll cover it tomorrow.)
     </script>
   </body>
 </html>

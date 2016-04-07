@@ -47,15 +47,19 @@
       </ul>
     </div>
     <script type="text/javascript">
+
       var firstQuestion = ("Where am I from?"); //Creates the firstQuestion variable which is the question that will be asked.
       var firstAnswer = prompt(firstQuestion); //Creates the firstAnswer variable that equals the answer to the firstQuestion.
       var homeTown = ("redmond"); //Creates the homeTown variable that will be compared to firstAnswer.
-
-      if (homeTown === firstAnswer){
-        alert("Great job! That's the right answer.");
+      console.log(firstAnswer); //Displays the user's answer in the developer console.
+      console.log(homeTown);//Displays the correct answer in the console.
+      if (homeTown === firstAnswer){ //Comparing the answer the user gave vs. the correct answer.
+        alert("Great job! That's the right answer."); //Message that will be displayed when the correct answer is given.
       }else{
-        alert("Sorry, that is not the correct answer.");
+        alert("Sorry, that is not the correct answer.");//Message that will displayed when an incorrect answer is given.
       };
+
+
     </script>
   </body>
 </html>

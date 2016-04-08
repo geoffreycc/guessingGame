@@ -7,32 +7,34 @@
     <header>
       <h1>Geoffrey C Cox</h1>
     </header>
-    <div>
-      <h2>Biography</h2>
-      <p>I was born in Redmond, Washington in 1986. I completed my AA degree at Bellevue College. I dropped out of a BFA program for computer graphics at Academy of Art University in San Francisco. I have worked as a game tester at Nintendo since returning to Washington. I enjoy drawing and painting in my free time. I also play tabletop games.</p>
-    </div>
-    <div>
-      <h2>Experience</h2>
-      <ul>
-        <li>Nintendo Associate product tester</li>
-        <li>Nintendo Associate product tester II</li>
-      </ul>
-    </div>
-    <div>
-      <h2>Education</h2>
-      <ul>
-        <li>Bellevue College</li>
-        <li>Academy of Art University</li>
-      </ul>
-    </div>
-    <div>
-      <h2>Goals</h2>
-      <ul>
-        <li>Learn a new skill.</li>
-        <li>Find better employment</li>
-        <li>Improve life style</li>
-      </ul>
-    </div>
+    <main>
+      <article>
+        <h2>Biography</h2>
+        <p>I was born in Redmond, Washington in 1986. I completed my AA degree at Bellevue College. I dropped out of a BFA program for computer graphics at Academy of Art University in San Francisco. I have worked as a game tester at Nintendo since returning to Washington. I enjoy drawing and painting in my free time. I also play tabletop games.</p>
+      </article>
+      <article>
+        <h2>Experience</h2>
+        <ul>
+          <li>Nintendo Associate product tester</li>
+          <li>Nintendo Associate product tester II</li>
+        </ul>
+      </article>
+      <article>
+        <h2>Education</h2>
+        <ul>
+          <li>Bellevue College</li>
+          <li>Academy of Art University</li>
+        </ul>
+      </article>
+      <article>
+        <h2>Goals</h2>
+        <ul>
+          <li>Learn a new skill.</li>
+          <li>Find better employment</li>
+          <li>Improve life style</li>
+        </ul>
+      </article>
+  </main>
     <script type="text/javascript">
 
     //need to add something to convert all of the answers to lower case characters!!!!!!(Might actually have to switch these to yes or no questions)
@@ -83,8 +85,6 @@
         alert("Sorry, " + age + " is too young.");
       }else if (age > '29'){
         alert("Sorry, " + age + " is too old.");
-      }else{
-        alert("Sorry, it looks like '" + age + "' was not recognized.");//This is not running. Strings are equalling to older than '29'.
       };
 
       //{If you want to extend this assignment, add a fourth question that takes a numeric input and then indicates to the user whether the answer is correct, too high, or too low. This part is not necessary for today, though... we'll cover it tomorrow.)

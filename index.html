@@ -36,14 +36,12 @@
       </article>
   </main>
     <script type="text/javascript">
-
-    //need to add something to convert all of the answers to lower case characters!!!!!!(Might actually have to switch these to yes or no questions)
-    //May need to add back in the "What is your name?" question.
+//need to add something to convert all of the answers to lower case characters!!!!!!(Might actually have to switch these to yes or no questions)
       var firstQuestion = ("Where am I from?"); //Creates the firstQuestion variable which is the question that will be asked.
       var firstAnswer = prompt(firstQuestion); //Creates the firstAnswer variable that equals the answer to the firstQuestion.
       var homeTown = ("redmond"); //Creates the homeTown variable that will be compared to firstAnswer.
-      console.log(firstAnswer); //Displays the user's answer in the developer console.
-      console.log(homeTown);//Displays the correct answer in the console.
+      console.log("firstAnswer is " + firstAnswer); //Displays the user's answer in the developer console.
+      console.log("homeTown is " + homeTown);//Displays the correct answer in the console.
       if (homeTown === firstAnswer){ //Comparing the answer the user gave vs. the correct answer.
         alert("Great job! That's the right answer."); //Message that will be displayed when the correct answer is given.
       }else{
@@ -55,36 +53,40 @@
       var goalOne = ("learn a new skill");//defines variable goalOne with the vaule of "learn a new skill"
       var goalTwo = ("find better employment");//defines variable goalTwo with the value of "find better employment"
       var goalThree = ("improve life style");//definges variable goalThree with the value of "improve lifestyle"
-      if (secondAnswer === goalOne){
-        alert("Yup! '" + secondAnswer + "' is one of my goals.");
-      }else if (secondAnswer === goalTwo){
-        alert("Cool! '" + secondAnswer + " ' is one of my goals.");
-      }else if (secondAnswer === goalThree){
-        alert("Right on! '" + secondAnswer + " ' is one of my goals.");
+      console.log("secondAnswer is " + secondAnswer);//Displays the user's answer to the second question.
+      console.log("goalOne is " + goalOne);//Displays the first of the possible correct answers.
+      console.log("goalTwo is " + goalTwo);//Displays the second of the possible correct answers.
+      console.log("goalThree is " + goalThree);//Displays the third of the possible correct answers.
+      if (secondAnswer === goalOne){//Compares the user input to the first possible correct answer.
+        alert("Yup! '" + secondAnswer + "' is one of my goals.");//If the user's answer matches goalOne this message will be displayed.
+      }else if (secondAnswer === goalTwo){//Compares the user input to the second possible correct answer.
+        alert("Cool! '" + secondAnswer + " ' is one of my goals.");//If the user's answer matches goalTwo this message will be displayed.
+      }else if (secondAnswer === goalThree){//Compares the user input to the third possible correct answer.
+        alert("Right on! '" + secondAnswer + " ' is one of my goals.");//If the user's answer matches goalThree this message will be displayed.
       }else{
-        alert("Oh no! It looks like '" + secondAnswer + "' is not one of my goals.");
+        alert("Oh no! It looks like '" + secondAnswer + "' is not one of my goals.");//If the user input does not match any of the three correct answers this message will display.
       };
 
-      var thirdQuestion = ("Where did I go to school?");
-      var thirdAnswer = prompt(thirdQuestion);
-      var schoolOne = ("bellevue college");
-      var schoolTwo = ("academy of art university");
-      if (thirdAnswer === schoolOne){
-        alert("Good old " + thirdAnswer + ". Feels like it was only yesterday.");
-      }else if(thirdAnswer === schoolTwo){
-        alert(thirdAnswer + ". Go urbanites!")
-      }else{
-        alert("Sorry, I don't remember attending " + thirdAnswer + ".");
+      var thirdQuestion = ("Where did I go to school?");//Creates the variable thirdQuestion which is "Where did I go to school?"
+      var thirdAnswer = prompt(thirdQuestion);//Prompts the third question. The user's answer will equal thirdAnser.
+      var schoolOne = ("bellevue college");//Creates schoolOne which has the value of bellevue college.
+      var schoolTwo = ("academy of art university");//creates schoolTwo which has the value of academy of art university.
+      if (thirdAnswer === schoolOne){//If the user's input is bellevue college this code will run.
+        alert("Good old " + thirdAnswer + ". Feels like it was only yesterday.");//If the above statement is true this message will be displayed.
+      }else if(thirdAnswer === schoolTwo){//If the user's input is academy of art university this part of the code will run.
+        alert(thirdAnswer + ". Go urbanites!")//If the above is true this message containing the user's input will be displayed.
+      }else{//If both the if and else if were false this part of the code will run.
+        alert("Sorry, I don't remember attending " + thirdAnswer + ".");//Will display this message if the user input does not equal one of the two correct answers.
       };
 
-      var fourthQuestion = ("How old am I?");
-      var age = prompt(fourthQuestion);
-      if (age === '29'){
-        alert("That's right I am " + age + " years old.");
-      }else if (age < '29'){
-        alert("Sorry, " + age + " is too young.");
-      }else if (age > '29'){
-        alert("Sorry, " + age + " is too old.");
+      var fourthQuestion = ("How old am I?");//Creates the variable fourthQuestion which equals "How old am I?"
+      var age = prompt(fourthQuestion);//Prompts the fourtQuestion. The user input will equal age.
+      if (age === '29'){//Compares user input and 29.
+        alert("That's right I am " + age + " years old.");//If the above user input is true this message will be displayed.
+      }else if (age < '29'){//Checks to see if the user input is less than 29.
+        alert("Sorry, " + age + " is too young.");//If the above is true this message will be displayed.
+      }else{//If the user input is not 29 and is not less than 29 this will run.
+        alert("Sorry, " + age + " is too old.");//This message displays if the above is ture.
       };
 
       //{If you want to extend this assignment, add a fourth question that takes a numeric input and then indicates to the user whether the answer is correct, too high, or too low. This part is not necessary for today, though... we'll cover it tomorrow.)

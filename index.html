@@ -53,25 +53,25 @@
       };
 
       var yesNoTwo = (userName + ", did I work at Sega?");//creates the variable yesNoTwo which equals a question that includes the userName.
-      var yesNoAnswerTwo = prompt(yesNoTwo);//creates the variable yesNoAnswerTwo
-      console.log("yesNoAnswerTwo is " + yesNoAnswerTwo);
-      if (yesNoAnswerTwo === "no"){
-        alert("That is correct " + userName + ".");
-      }else if (yesNoAnswerTwo === "yes"){
-        alert("I did not work at sega.");
-      }else{
-        alert("Only 'yes' and 'no' are accepted for this question.");
+      var yesNoAnswerTwo = prompt(yesNoTwo);//creates the variable yesNoAnswerTwo which prompts the above question and stores the answer in yesNoAnswerTwo.
+      console.log("yesNoAnswerTwo is " + yesNoAnswerTwo);//displays the value of yesNoAnswerTwo in the console.
+      if (yesNoAnswerTwo === "no"){//compares the user input to no
+        alert("That is correct " + userName + ".");//if the above statement is true this string will display.
+      }else if (yesNoAnswerTwo === "yes"){//compares the user input to yes.
+        alert("I did not work at sega.");//if the above statement is true this string will display.
+      }else{//if the user input is not yes or no this will run.
+        alert("Only 'yes' and 'no' are accepted for this question.");//displays when the above is ture.
       };
 
-      var yesNoThree = ("Is painting one of my hobbies?");
-      var yesNoAnswerThree = prompt(yesNoThree);
-      console.log("yesNoAnswerThree is " + yesNoAnswerThree);
-      if (yesNoAnswerThree === "yes"){
-        alert("That's right " + userName + " it sure is.");
-      }else if (yesNoAnswerThree === "no"){
-        alert("Actually it is one of my hobbies.");
-      }else{
-        alert("Sorry only 'yes' and 'no' are recognized.");
+      var yesNoThree = ("Is painting one of my hobbies?");//creates the variable yesNoThree which has Is painting one of my hobbies? as it's value.
+      var yesNoAnswerThree = prompt(yesNoThree);//creates the variable yesNoAnswerThree which will prompt the above question and store the user's answer.
+      console.log("yesNoAnswerThree is " + yesNoAnswerThree);//displays in the value of yesNoAnswerThree in the console.
+      if (yesNoAnswerThree === "yes"){//compares the user input to yes.
+        alert("That's right " + userName + " it sure is.");//if the above is true this string will display.
+      }else if (yesNoAnswerThree === "no"){//compares the user input to no.
+        alert("Actually it is one of my hobbies.");//if the above is true this string will display.
+      }else{//if the answer is not yes and is also not no this will run.
+        alert("Sorry only 'yes' and 'no' are recognized.");//this string displays if the above is true.
       };
 
 

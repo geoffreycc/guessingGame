@@ -37,23 +37,23 @@
   </main>
     <script type="text/javascript">
 
-      var whatName = ("What is your name?");
-      var userName = prompt(whatName);
-      console.log("userName is " + userName);
+      var whatName = ("What is your name?");//creates the variable whatName with the value of "What is your name?"
+      var userName = prompt(whatName);//creates the variable userName which will store the user input from the whatName question.
+      console.log("userName is " + userName);//displays in the developer console what the user input was.
 
-      var yesNoOne = (userName + ", am I from Washington?");
-      var yesNoAnswerOne = prompt(yesNoOne);
-      console.log("yesNoAnserOne is " + yesNoAnswerOne);
-      if (yesNoAnswerOne === "yes"){
-        alert("Great job " + userName + "!");
-      }else if (yesNoAnswerOne === "no"){
-        alert("Sorry " + userName + " that is incorrect.");
-      }else{
-        alert("I'm sorry. The only accepted answers are 'yes' and 'no'.");
+      var yesNoOne = (userName + ", am I from Washington?");//creates the yesNoOne which has a value of the user's name combined with a string.
+      var yesNoAnswerOne = prompt(yesNoOne);//creates the variable yesNoAnswerOne which will prompt the above question and store the user input.
+      console.log("yesNoAnserOne is " + yesNoAnswerOne);//displays in the developer console what the user input was.
+      if (yesNoAnswerOne === "yes"){//compares the user input to the string yes.
+        alert("Great job " + userName + "!");//If the above statement is true this string will be displayed.
+      }else if (yesNoAnswerOne === "no"){//compares the user input to the string no.
+        alert("Sorry " + userName + " that is incorrect.");//If the above statement is true this string will be displayed.
+      }else{//If the user input not 'yes' or 'no' this will run.
+        alert("I'm sorry. The only accepted answers are 'yes' and 'no'.");//will be displayed when the above is true.
       };
 
-      var yesNoTwo = (userName + ", did I work at Sega?");
-      var yesNoAnswerTwo = prompt(yesNoTwo);
+      var yesNoTwo = (userName + ", did I work at Sega?");//creates the variable yesNoTwo which equals a question that includes the userName.
+      var yesNoAnswerTwo = prompt(yesNoTwo);//creates the variable yesNoAnswerTwo
       console.log("yesNoAnswerTwo is " + yesNoAnswerTwo);
       if (yesNoAnswerTwo === "no"){
         alert("That is correct " + userName + ".");

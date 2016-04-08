@@ -36,7 +36,37 @@
       </article>
   </main>
     <script type="text/javascript">
-//need to add something to convert all of the answers to lower case characters!!!!!!(Might actually have to switch these to yes or no questions)
+
+      var whatName = ("What is your name?");
+      var userName = prompt(whatName);
+      console.log("userName is " + userName);
+
+      var yesNoOne = (userName + ", am I from Washington?");
+      var yesNoAnswerOne = prompt(yesNoOne);
+      console.log("yesNoAnserOne is " + yesNoAnswerOne);
+      if (yesNoAnswerOne === "yes"){
+        alert("Great job " + userName + "!");
+      }else if (yesNoAnswerOne === "no"){
+        alert("Sorry " + userName + " that is incorrect.");
+      }else{
+        alert("I'm sorry. The only accepted answers are 'yes' and 'no'.");
+      };
+
+      var yesNoTwo = (userName + ", did I work at Sega?");
+      var yesNoAnswerTwo = prompt(yesNoTwo);
+      console.log("yesNoAnswerTwo is " + yesNoAnswerTwo);
+      if (yesNoAnswerTwo === "no"){
+        alert("That is correct " + userName + ".");
+      }else if (yesNoAnswerTwo === "yes"){
+        alert("I did not work at sega.");
+      }else{
+        alert("Only 'yes' and 'no' are accepted for this question.");
+      };
+
+
+
+
+//need to add something to convert all of the answers to lower case characters!!!!!!
       var firstQuestion = ("Where am I from?"); //Creates the firstQuestion variable which is the question that will be asked.
       var firstAnswer = prompt(firstQuestion); //Creates the firstAnswer variable that equals the answer to the firstQuestion.
       var homeTown = ("redmond"); //Creates the homeTown variable that will be compared to firstAnswer.
@@ -76,7 +106,7 @@
       }else if(thirdAnswer === schoolTwo){//If the user's input is academy of art university this part of the code will run.
         alert(thirdAnswer + ". Go urbanites!")//If the above is true this message containing the user's input will be displayed.
       }else{//If both the if and else if were false this part of the code will run.
-        alert("Sorry, I don't remember attending " + thirdAnswer + ".");//Will display this message if the user input does not equal one of the two correct answers.
+        alert("Sorry, I don't remgember attending " + thirdAnswer + ".");//Will display this message if the user input does not equal one of the two correct answers.
       };
 
       var fourthQuestion = ("How old am I?");//Creates the variable fourthQuestion which equals "How old am I?"
@@ -89,7 +119,6 @@
         alert("Sorry, " + age + " is too old.");//This message displays if the above is ture.
       };
 
-      //{If you want to extend this assignment, add a fourth question that takes a numeric input and then indicates to the user whether the answer is correct, too high, or too low. This part is not necessary for today, though... we'll cover it tomorrow.)
     </script>
   </body>
 </html>

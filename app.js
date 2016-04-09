@@ -1,11 +1,15 @@
 
       var userName = prompt("What is your name?");//creates the variable userName which will store the user input from the question.
       console.log("userName is " + userName);//displays in the developer console what the user input was.
+      var score = 0;//Creates the score variable that equals 0.
+      console.log("Current score is : " + score);//displays current score.
 
       var answerOne = prompt(userName + ", am I from Washington?");//creates the variable which will prompt the question and store the user input.
       console.log("answerOne is " + answerOne);//displays in the developer console what the user input was.
       if (answerOne.toLowerCase() === "yes"){//compares the user input in lowercase to the string yes.
         alert("Great job " + userName + "!");//If the above statement is true this string will be displayed.
+        score = (score + 1);//Adds 1 to the score for getting the correct answer.
+        console.log ("Current score is : " + score);//displays current score in the console.
       }else if (answerOne.toLowerCase() === "no"){//compares the user input, converted to lower case characters, to the string no.
         alert("Sorry " + userName + " that is incorrect.");//If the above statement is true this string will be displayed.
       }else{//If the user input not 'yes' or 'no' this will run.
@@ -16,6 +20,8 @@
       console.log("answerTwo is " + answerTwo);//displays the value of answerTwo in the console.
       if (answerTwo.toLowerCase() === "no"){//compares the user input to no
         alert("That is correct " + userName + ".");//if the above statement is true this string will display.
+        score = (score + 1);//Adds 1 to the score for getting the correct answer.
+        console.log ("Current score is : " + score);//displays the current score in the console.
       }else if (answerTwo.toLowerCase() === "yes"){//compares the user input to yes.
         alert("I did not work at sega.");//if the above statement is true this string will display.
       }else{//if the user input is not yes or no this will run.
@@ -26,11 +32,15 @@
       console.log("answerThree is " + answerThree);//displays in the value of answerThree in the console.
       if (answerThree.toLowerCase() === "yes"){//compares the user input to yes.
         alert("That's right " + userName + " it sure is.");//if the above is true this string will display.
+        score = (score + 1);//Adds 1 to the score for getting the correct answer.
+        console.log ("Current score is : " + score);//displays the score in the console.
       }else if (answerThree.toLowerCase() === "no"){//compares the user input to no.
         alert("Actually it is one of my hobbies.");//if the above is true this string will display.
       }else{//if the answer is not yes and is also not no this will run.
         alert("Sorry only 'yes' and 'no' are recognized.");//this string displays if the above is true.
       }
+
+      alert("You got " + score + " out of 3 right." + "");
 
       var age = parseInt(prompt("How old am I?"));//Prompts the question. The user input will equal age.
       console.log("age is " +age);//displays the user input in the console.

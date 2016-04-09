@@ -40,16 +40,18 @@
         alert("Sorry only 'yes' and 'no' are recognized.");//this string displays if the above is true.
       }
 
-      alert("You got " + score + " out of 3 right." + "");
+      alert("You got " + score + " out of 3 right." ); //"Maybe create a different message for each score?");
 
       var age = parseInt(prompt("How old am I?"));//Prompts the question. The user input will equal age.
-      console.log("age is " +age);//displays the user input in the console.
-      if (age === 29){//Compares user input and 29.
-        alert("That's right I am " + age + " years old.");//If the above user input is true this message will be displayed.
-      }else if (age < 29){//Checks to see if the user input is less than 29.
-        alert("Sorry, " + age + " is too young.");//If the above is true this message will be displayed.
-      }else if (age > 29){//If the user input is greater than 29.
-        alert("Sorry, " + age + " is too old.");//This message displays if the above is ture.
-      }else{
-        alert("Sorry, only numbers are accepted.");//Will be displayed if the user enters something other than a number.
+      console.log ("age is " + age);//displays the user input in the console.
+      while (age !== 29){//if the age entered is not 29 this will run
+        age = parseInt(prompt("That's not right, guess again."));//prompts the guess again question. age equals the input.
+        console.log("The age is now : " + age);//logs the most recent age value to the console
       }
+      if (age === 29){//when the above while statement is false this will run
+        alert("Great job! I am " + age + " years old.");//displays the correct answer message on screen
+      }
+
+
+
+      // var age = parseInt(prompt("How old am I?"));

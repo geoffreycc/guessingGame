@@ -45,18 +45,15 @@
       var age = parseInt(prompt("How old am I?"));//Prompts the question. The user input will equal age.
       console.log ("age is " + age);//displays the user input in the console.
       while (age !== 29){//if the age entered is not 29 this will run
-        if (age < 29) {
-          age = parseInt(prompt("That's too low. Try again."));
-        }else if (age > 29) {
-          age = parseInt(prompt("That's too high. Try again."));
-        }else if (age !== 29){
-          age = parseInt(prompt("Ooops. Try using the number keys this time."));
+        if (age < 29) {//If less than 29 will run
+          age = parseInt(prompt("That's too low. Try again."))//prompts question again while telling the user the answer is too low
+        }else if (age > 29) {//if greater than 29 will run
+          age = parseInt(prompt("That's too high. Try again."));//prompts question while saying guess was too high
+        }else if (age !== 29){//if a string is entered this will run
+          age = parseInt(prompt("Ooops. Try using the number keys this time."));//prompts the question while informing about accepted characters
         }
       }
       if (age === 29){//when the above while statement is false this will run
         alert("Great job! I am " + age + " years old.");//displays the correct answer message on screen
       }
-
-
-
-      // var age = parseInt(prompt("How old am I?"));
+      

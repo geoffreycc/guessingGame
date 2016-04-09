@@ -8,7 +8,7 @@
       console.log("answerOne is " + answerOne);//displays in the developer console what the user input was.
       if (answerOne.toLowerCase() === "yes"){//compares the user input in lowercase to the string yes.
         alert("Great job " + userName + "!");//If the above statement is true this string will be displayed.
-        score = (score + 1);//Adds 1 to the score for getting the correct answer.
+        score++;//Adds 1 to the score for getting the correct answer.
         console.log ("Current score is : " + score);//displays current score in the console.
       }else if (answerOne.toLowerCase() === "no"){//compares the user input, converted to lower case characters, to the string no.
         alert("Sorry " + userName + " that is incorrect.");//If the above statement is true this string will be displayed.
@@ -20,7 +20,7 @@
       console.log("answerTwo is " + answerTwo);//displays the value of answerTwo in the console.
       if (answerTwo.toLowerCase() === "no"){//compares the user input to no
         alert("That is correct " + userName + ".");//if the above statement is true this string will display.
-        score = (score + 1);//Adds 1 to the score for getting the correct answer.
+        score++;//Adds 1 to the score for getting the correct answer.
         console.log ("Current score is : " + score);//displays the current score in the console.
       }else if (answerTwo.toLowerCase() === "yes"){//compares the user input to yes.
         alert("I did not work at sega.");//if the above statement is true this string will display.
@@ -32,7 +32,7 @@
       console.log("answerThree is " + answerThree);//displays in the value of answerThree in the console.
       if (answerThree.toLowerCase() === "yes"){//compares the user input to yes.
         alert("That's right " + userName + " it sure is.");//if the above is true this string will display.
-        score = (score + 1);//Adds 1 to the score for getting the correct answer.
+        score++;//Adds 1 to the score for getting the correct answer.
         console.log ("Current score is : " + score);//displays the score in the console.
       }else if (answerThree.toLowerCase() === "no"){//compares the user input to no.
         alert("Actually it is one of my hobbies.");//if the above is true this string will display.
@@ -41,7 +41,8 @@
       }
 
       alert("You got " + score + " out of 3 right." ); //"Maybe create a different message for each score?");
-
+      alert("Bonus question!");
+      
       var age = parseInt(prompt("How old am I?"));//Prompts the question. The user input will equal age.
       console.log ("age is " + age);//displays the user input in the console.
       while (age !== 29){//if the age entered is not 29 this will run
@@ -56,4 +57,3 @@
       if (age === 29){//when the above while statement is false this will run
         alert("Great job! I am " + age + " years old.");//displays the correct answer message on screen
       }
-      

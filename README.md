@@ -1,13 +1,13 @@
-Codefellows 201 Guessing Game
+# Codefellows 201 Guessing Game :suspect:
 
-files:
-  index.html
-  app.js
-  README.md
+1. files:
+..1. index.html
+..2. app.js
+..3. README.md
 
-citations:
-  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase
+2. citations:
+..1. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase
 
-author:
-  Geoffrey Cox
-  gcox3d@gmail.com
+3. author:
+..* Geoffrey Cox
+..* gcox3d@gmail.com

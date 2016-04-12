@@ -1,5 +1,5 @@
 ## **Codefellows 201 Guessing Game** :suspect:
--------------
+
 
 #####Files:
 1. index.html
@@ -14,4 +14,3 @@
 #####Author:
 * Geoffrey Cox
 * gcox3d@gmail.com
------------

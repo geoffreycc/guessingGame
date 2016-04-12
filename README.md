@@ -1,13 +1,15 @@
 # Codefellows 201 Guessing Game :suspect:
 
-1. files:
-..1. index.html
-..2. app.js
-..3. README.md
+##Files:
+1. index.html
+2. app.js
+3. README.md
 
-2. citations:
-..1. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase
+##Citations:
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase
+* https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+* http://www.emoji-cheat-sheet.com/
 
-3. author:
-..* Geoffrey Cox
-..* gcox3d@gmail.com
+##Author:
+* Geoffrey Cox
+* gcox3d@gmail.com

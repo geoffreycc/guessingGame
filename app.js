@@ -46,14 +46,14 @@ var age = parseInt(prompt("How old am I?"));//Prompts the question. The user inp
 console.log ("age is " + age);//displays the user input in the console.
 while (age !== 29) {//if the age entered is not 29 this will run
   if (age < 29) {//If less than 29 will run
-    age = parseInt(prompt("That's too low. Try again."))//prompts question again while telling the user the answer is too low
+    age = parseInt(prompt("That's too low. Try again."));//prompts question again while telling the user the answer is too low
     console.log("Current age is " + age);//logs current age
   } else if (age > 29) {//if greater than 29 will run
     age = parseInt(prompt("That's too high. Try again."));//prompts question while saying guess was too high
     console.log("Current age is " + age);//logs current age
   } else if (age !== 29) {//if a string is entered this will run
     age = parseInt(prompt("Ooops. Try using the number keys this time."));//prompts the question while informing about accepted characters
-    console.log("Current age is " + age )//Displays in the console the current age, probably NaN
+    console.log("Current age is " + age );//Displays in the console the current age, probably NaN
   }
 }
 if (age === 29) {//when the above while statement is false this will run

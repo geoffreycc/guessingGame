@@ -3,48 +3,60 @@ console.log("userName is " + userName);//displays in the developer console what 
 var score = 0;//Creates the score variable that equals 0.
 console.log("Current score is : " + score);//displays current score.
 
-var elements = [document.getElementById("one"),
-  document.getElementById("two"),
-  document.getElementById("three"),
-  document.getElementById("four"),
+var els = [
+  document.getElementById("qOne"),
+  document.getElementById("qTwo"),
+  document.getElementById("qThree"),
+  document.getElementById("qFour"),
+  document.getElementById("qFive"),
+  document.getElementById("numCorr")
 ];
 
-var questions = [userName + ", am I from Washington?",
+var question = [
+  userName + ", am I from Washington?",
   userName + ", did I work at Sega?",
   "Is painting one of my hobbies?",
   "How old am I?"
-];
+  ];
 
-var answers = [
+var answer = [
   "yes",
   "no",
   "yes",
   29
 ];
 
-var corrAns = ["Great job " + userName + "!",
+var corrAns = [
+  "Great job " + userName + "!",
   "That is correct " + userName + ".",
   "That's right " + userName + " it sure is.",
-  "That's right, I am 29!"
+  "Great job! I am 29 years old."
 ];
 
 var wrngAns = [
   "Sorry " + userName + " that is incorrect.",
   "I did not work at sega.",
   "Actually it is one of my hobbies.",
-  "That's too low!",
-  "That's too high!"
+  "That's too low. Try again."
 ];
 
+var notValid = [
+  "I'm sorry. The only accepted answers are 'yes' and 'no'.",
+  "Only 'yes' and 'no' are accepted for this question.",
+  "Sorry only 'yes' and 'no' are recognized.",
+  "Ooops. Try using the number keys this time."
+];
 
-function game(questions, answers, corrAns, wrngAns) {
+var favColors = ["blue", "green", "red"];
+
+function game(question, answers, corrAns, wrngAns, els) {
   var userInput = prompt(questions).toLowerCase();
   if (isNaN(parseInt(userInput))) {
     if (userInput === answers) {
-      elements[i].textContent = corrAns;
+      els.textContent = corrAns;
       score++;
     } else {
-      elements[i].textContent = wrngAns;
+      els.textContent = wrngAns;
     }
   } else {
     while (age !== 29) {//if the age entered is not 29 this will run
@@ -74,7 +86,7 @@ function game(questions, answers, corrAns, wrngAns) {
   // }
 
 for(i = 0; i < questions.length; i++) {
-  game(questions[i], answers[i], corrAns[i], wrngAns[i])
+  game(question[i], answer[i], corrAns[i], wrngAns[i], els[i])
 }
 
 var results = document.getElementById("score");

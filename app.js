@@ -48,7 +48,9 @@ function game(questions, answers, answers2, corrAns, wrngAns, notValid) {
   }
 }
 
-game(questions[0], answers[0], answers2[0], corrAns[0], wrngAns[0], notValid[0])
+for(i = 0; i < questions.length; i++) {
+  game(questions[i], answers[i], answers2[i], corrAns[i], wrngAns[i], notValid[i])
+}
 // var answerOne = prompt(userName + ", am I from Washington?");//creates the variable which will prompt the question and store the user input.
 // console.log("answerOne is " + answerOne);//displays in the developer console what the user input was.
 // if (answerOne.toLowerCase() === "yes") {//compares the user input in lowercase to the string yes.

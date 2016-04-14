@@ -49,64 +49,37 @@ var notValid = [
 
 var favColors = ["blue", "green", "red"];
 
-function game(question, answers, corrAns, wrngAns, els) {
-  var userInput = prompt(questions).toLowerCase();
+function game(question, answer, corrAns, wrngAns, notValid, els) {
+  var userInput = prompt(question).toLowerCase();
   if (isNaN(parseInt(userInput))) {
-    if (userInput === answers) {
+    if (userInput === answer || userInput === answer.substr(0,1)) {
       els.textContent = corrAns;
       score++;
+    } else if (userInput !== ("no" || "n") && userInput !== ("yes" || "y")) {
+      els.textContent = notValid;
     } else {
       els.textContent = wrngAns;
     }
   } else {
-    while (age !== 29) {//if the age entered is not 29 this will run
-      if (age < 29) {//If less than 29 will run
-        age = parseInt(prompt("That's too low. Try again."));//prompts question again while telling the user the answer is too low
-        console.log("Current age is " + age);//logs current age
-      } else if (age > 29) {//if greater than 29 will run
-        age = parseInt(prompt("That's too high. Try again."));//prompts question while saying guess was too high
-        console.log("Current age is " + age);//logs current age
-      } else if (age !== 29) {//if a string is entered this will run
-        age = parseInt(prompt("Ooops. Try using the number keys this time."));//prompts the question while informing about accepted characters
-        console.log("Current age is " + age );//Displays in the console the current age, probably NaN
+    while (parseInt(userInput) !== answer) {
+      if (parseInt(userInput) < 29) {
+        userInput = parseInt(prompt(wrngAns));
+      } else if (parseInt(userInput) > 29) {
+        userInput = parseInt(prompt("That's too high. Try again."));
+      } else if (userInput !== 29) {
+        userInput = parseInt(prompt(notValid));
       }
     }
+    if (parseInt(userInput) === 29) {
+      els.textContent = corrAns;
+      score++;
+    }
+  }
 }
-}
-  //  } else if (typeof parseInt(userInput) === "number") {
-  //    if (parseInt(userInput) === answers) {
-  //     elements[i].textContent = corrAns;
-  //     score++;
-  //   } else if (parseInt(userInput < answers)) {
-  //     elements[i].textContent = wrngAns;
-  //   } else if (parseInt(userInput > answers)) {
-  //     elements[i+1].textContent = wrngAns;
-  //   }
-  //  }
-  // }
 
-for(i = 0; i < questions.length; i++) {
-  game(question[i], answer[i], corrAns[i], wrngAns[i], els[i])
+for(i = 0; i < question.length; i++) {
+  game(question[i], answer[i], corrAns[i], wrngAns[i], notValid[i], els[i]);
 }
 
 var results = document.getElementById("score");
-results.textContent = "You got " + score + " out of 3 right."; //"Maybe create a different message for each score?");
-
-// var age = parseInt(prompt("How old am I?"));//Prompts the question. The user input will equal age.
-// console.log ("age is " + age);//displays the user input in the console.
-// while (age !== 29) {//if the age entered is not 29 this will run
-//   if (age < 29) {//If less than 29 will run
-//     age = parseInt(prompt("That's too low. Try again."));//prompts question again while telling the user the answer is too low
-//     console.log("Current age is " + age);//logs current age
-//   } else if (age > 29) {//if greater than 29 will run
-//     age = parseInt(prompt("That's too high. Try again."));//prompts question while saying guess was too high
-//     console.log("Current age is " + age);//logs current age
-//   } else if (age !== 29) {//if a string is entered this will run
-//     age = parseInt(prompt("Ooops. Try using the number keys this time."));//prompts the question while informing about accepted characters
-//     console.log("Current age is " + age );//Displays in the console the current age, probably NaN
-//   }
-// }
-
-// if (age === 29) {//when the above while statement is false this will run
-//   alert("Great job! I am " + age + " years old.");//displays the correct answer message on screen
-// }
+results.textContent = "You got " + score + " out of 3 right.";

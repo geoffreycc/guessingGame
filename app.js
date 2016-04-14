@@ -3,6 +3,40 @@ console.log("userName is " + userName);//displays in the developer console what 
 var score = 0;//Creates the score variable that equals 0.
 console.log("Current score is : " + score);//displays current score.
 
+var userName = prompt("What is your name?");//creates the variable userName which will store the user input from the question.
+console.log("userName is " + userName);//displays in the developer console what the user input was.
+var score = 0;//Creates the score variable that equals 0.
+console.log("Current score is : " + score);//displays current score.
+
+var questions = [userName + ", am I from Washington?",
+  userName + ", did I work at Sega?",
+  "Is painting one of my hobbies?"
+];
+
+var answers = [
+  "yes",
+  "no",
+  "yes"
+];
+
+var corrAns = ["Great job " + userName + "!",
+  "That is correct " + userName + ".",
+  "That's right " + userName + " it sure is.",
+];
+
+var wrngAns = [
+  "Sorry " + userName + " that is incorrect.",
+  "I did not work at sega.",
+  "Actually it is one of my hobbies.",
+];
+
+var notValid = [
+  "I'm sorry. The only accepted answers are 'yes' and 'no'",
+  "Only 'yes' and 'no' are accepted for this question.",
+  "Sorry only 'yes' and 'no' are recognized."  
+];
+
+
 var answerOne = prompt(userName + ", am I from Washington?");//creates the variable which will prompt the question and store the user input.
 console.log("answerOne is " + answerOne);//displays in the developer console what the user input was.
 if (answerOne.toLowerCase() === "yes") {//compares the user input in lowercase to the string yes.

@@ -81,5 +81,16 @@ for(i = 0; i < question.length; i++) {
   game(question[i], answer[i], corrAns[i], wrngAns[i], notValid[i], els[i]);
 }
 
-var results = document.getElementById("score");
-results.textContent = "You got " + score + " out of 3 right.";
+
+//Stretch Goal
+var color = prompt("What is one of my favorite colors?").toLowerCase();
+for(i = 0; i < favColors.length; i++) {
+  if (color === favColors[i]) {
+    els[4].textContent = color.substr(0,1).toUpperCase() + color.substr(1) + " is one of my favorite colors!";
+    score++;
+    break;
+  } else {
+      els[4].textContent = color.substr(0,1).toUpperCase() + color.substr(1) + " is not one of my favorite colors!";
+    }
+  }
+els[5].textContent = "You got " + score + " out of 5 right.";

@@ -1,4 +1,4 @@
-var userName = prompt("What is your name?");//creates the variable userName which will store the user input from the question.
+var userName = prompt("What is your name?");//creates the variable userName which will store the user input from the q.
 console.log("userName is " + userName);//displays in the developer console what the user input was.
 var score = 0;//Creates the score variable that equals 0.
 console.log("Current score is : " + score);//displays current score.
@@ -49,49 +49,49 @@ var notValid = [
 
 var favColors = ["blue", "green", "red"];
 
-function game(question, answer, corrAns, wrngAns, notValid, els) {
-  var userInput = prompt(question).toLowerCase();
+function game(q, ans, correct, wrong, invalid, element) {
+  var userInput = prompt(q).toLowerCase();
   if (isNaN(parseInt(userInput))) {
-    if (userInput === answer || userInput === answer.substr(0,1)) {
-      els.textContent = corrAns;
+    if (userInput === ans || userInput === ans.substr(0,1)) {
+      element.textContent = correct;
       score++;
     } else if (userInput !== ("no" || "n") && userInput !== ("yes" || "y")) {
-      els.textContent = notValid;
+      element.textContent = invalid;
     } else {
-      els.textContent = wrngAns;
+      element.textContent = wrong;
     }
   } else {
-    while (parseInt(userInput) !== answer) {
+    while (parseInt(userInput) !== ans) {
       if (parseInt(userInput) < 29) {
-        userInput = parseInt(prompt(wrngAns));
+        userInput = parseInt(prompt(wrong));
       } else if (parseInt(userInput) > 29) {
         userInput = parseInt(prompt("That's too high. Try again."));
       } else if (userInput !== 29) {
-        userInput = parseInt(prompt(notValid));
+        userInput = parseInt(prompt(invalid));
       }
     }
     if (parseInt(userInput) === 29) {
-      els.textContent = corrAns;
+      element.textContent = correct;
       score++;
     }
   }
 }
 
-for(i = 0; i < question.length; i++) {
+for(var i = 0; i < question.length; i++) {
   game(question[i], answer[i], corrAns[i], wrngAns[i], notValid[i], els[i]);
 }
 
 
 //Stretch Goal
 var color = prompt("What is one of my favorite colors?").toLowerCase();
-for(i = 0; i < favColors.length; i++) {
-  if (color === favColors[i]) {
-    els[4].textContent = color.substr(0,1).toUpperCase() + color.substr(1) + " is one of my favorite colors!";
+for(var j = 0; j < favColors.length; j++) {
+  if (color === favColors[j]) {
+    element[4].textContent = color.substr(0,1).toUpperCase() + color.substr(1) + " is one of my favorite colors!";
     score++;
     break;
   } else {
       els[4].textContent = color.substr(0,1).toUpperCase() + color.substr(1) + " is not one of my favorite colors!";
     }
   }
-  
+
 els[5].textContent = "You got " + score + " out of 5 right.";

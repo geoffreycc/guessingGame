@@ -1,0 +1,39 @@
+body {
+  color: #3b3a36;
+  font-family: 'Josefin Sans',;
+}
+
+header {
+  background-color: #c0dfd9;
+  width: auto;
+  border-radius: 50px;
+  text-align: center;
+  height: 90px;
+  line-height: 90px;
+}
+
+section {
+  background-color: #e9ece5;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+}
+ .info section {
+   display: inline-block;
+   width: 30%;
+ }
+
+footer {
+  background-color: #b3c2bf;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+}
+
+footer div {
+  display: inline-block;
+}
+
+.question {
+  font-weight: bold;
+}

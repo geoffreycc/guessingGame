@@ -13,7 +13,7 @@
     document.getElementById("numCorr")
   ];
 
-  var question = [
+  var questions = [
     userName + ", am I from Washington?",
     userName + ", did I work at Sega?",
     "Is painting one of my hobbies?",
@@ -78,8 +78,8 @@
     }
   }
 
-  for(var i = 0; i < question.length; i++) {
-    game(question[i], answer[i], corrAns[i], wrngAns[i], notValid[i], els[i]);
+  for(var i = 0; i < questions.length; i++) {
+    game(questions[i], answer[i], corrAns[i], wrngAns[i], notValid[i], els[i]);
   }
 
 

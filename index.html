@@ -2,41 +2,45 @@
 <html>
   <head>
     <title>Geoffrey Cox</title>
-    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="CSS/style.css">
   </head>
   <body>
     <header>
-      <h1>Geoffrey C Cox</h1>
+      <h1 class="name">GEOFFREY C COX</h1>
     </header>
     <main>
-      <article>
+      <section class="biography">
         <h2>Biography</h2>
         <p>I was born in Redmond, Washington in 1986. I completed my AA degree at Bellevue College. I dropped out of a BFA program for computer graphics at Academy of Art University in San Francisco. I have worked as a game tester at Nintendo since returning to Washington. I enjoy drawing and painting in my free time. I also play tabletop games.</p>
-      </article>
-      <article>
-        <h2>Experience</h2>
-        <ul>
-          <li>Nintendo Associate product tester</li>
-          <li>Nintendo Associate product tester II</li>
-        </ul>
-      </article>
-      <article>
-        <h2>Education</h2>
-        <ul>
-          <li>Bellevue College</li>
-          <li>Academy of Art University</li>
-        </ul>
-      </article>
-      <article>
-        <h2>Goals</h2>
-        <ul>
-          <li>Learn a new skill.</li>
-          <li>Find better employment</li>
-          <li>Improve life style</li>
-        </ul>
-      </article>
+      </section>
+      <div class="info">
+        <section class="experience">
+          <h2>Experience</h2>
+          <ul>
+            <li>Nintendo Associate product tester</li>
+            <li>Nintendo Associate product tester II</li>
+          </ul>
+        </section>
+        <section class="education">
+          <h2>Education</h2>
+          <ul>
+            <li>Bellevue College</li>
+            <li>Academy of Art University</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Goals</h2>
+          <ul>
+            <li>Learn a new skill.</li>
+            <li>Find better employment</li>
+            <li>Improve life style</li>
+          </ul>
+        </section>
+      </div>
     </main>
-    <section>
+    <section class="qa">
+      <h2>Questions</h2>
       <p class="question">Am I from washington?</p>
       <p id="qOne"></p>
       <p class="question">Did I work at Sega?</p>
@@ -49,6 +53,14 @@
       <p id="qFive"></p>
       <p id="numCorr"></p>
     </section>
-    <script src="app.js" type="text/javascript"></script>
+    <footer>
+      <div id="author">
+        <p>Author: <a href="https://www.github.com/geoffreycc">Geoffrey Cox</a></p>
+      </div>
+      <div id="contributor">
+        <p>Contributor: <a href="http://www.github.com/jessicamvs">Jessica Vasquez-Soltero</a></p>
+      </div>
+    </footer>
+    <script src="JS/app.js" type="text/javascript"></script>
   </body>
 </html>

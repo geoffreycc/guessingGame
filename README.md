@@ -14,6 +14,8 @@ This is a page about me with a few questions to test your knowledge about me.
 * http://www.emoji-cheat-sheet.com/
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr
+* http://www.awwwards.com/trendy-web-color-palettes-and-material-design-color-schemes-tools.html
+* http://stackoverflow.com/questions/8865458/how-to-align-text-vertically-center-in-div-with-css
 
 #####Author:
 * Geoffrey Cox

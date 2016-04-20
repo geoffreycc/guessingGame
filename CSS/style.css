@@ -5,23 +5,28 @@ body {
 
 header {
   background-color: #c0dfd9;
-  width: auto;
-  border-radius: 50px;
+  /*width: auto;*/
+  border-radius: 10px;
   text-align: center;
   height: 90px;
-  line-height: 90px;
+  /*line-height: 90px; Moves the name down lower in box*/
 }
 
 section {
   background-color: #e9ece5;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 5px;
   margin: 10px;
+  /*height: 250px;
+  width: 400px;*/
 }
 
  .info section {
-   display: inline-block;
-   width: 30%;
+   /*display: inline-block;*/
+   display: inline-flex;
+   width: 31%;
+   height: 300px;
+   transform: translateX(15px);
  }
 
 footer {
@@ -33,6 +38,8 @@ footer {
 
 footer div {
   display: inline-block;
+  font-size: 12px;
+  margin-top: 15px;
 }
 
 .question {

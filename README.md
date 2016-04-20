@@ -16,6 +16,8 @@ This is a page about me with a few questions to test your knowledge about me.
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr
 * http://www.awwwards.com/trendy-web-color-palettes-and-material-design-color-schemes-tools.html
 * http://stackoverflow.com/questions/8865458/how-to-align-text-vertically-center-in-div-with-css
+* http://www.w3schools.com/jsref/prop_html_classname.asp
+* https://developer.mozilla.org/en-US/docs/Web/API/Element/className
 
 #####Author:
 * Geoffrey Cox

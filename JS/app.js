@@ -99,6 +99,7 @@
       if (parseInt(userInput) === 29) {
         element.textContent = correct;
         element.className = 'right';
+        document.getElementById("img").innerHTML += '<img src="Images/correct.png">';
         score++;
       }
     }
@@ -115,11 +116,14 @@
     if (color === favColors[j]) {
       els[4].textContent = color.substr(0,1).toUpperCase() + color.substr(1) + " is one of my favorite colors!";
       els[4].className = 'right';
+      document.getElementById("img").innerHTML += '<img src="Images/correct.png">';
       score++;
       break;
     } else {
       els[4].textContent = color.substr(0,1).toUpperCase() + color.substr(1) + " is not one of my favorite colors!";
       els[4].className = 'incorrect';
+      document.getElementById('img').innerHTML += '<img src="Images/incorrect.png">';
+      break;
       }
     }
 

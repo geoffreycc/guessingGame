@@ -19,6 +19,7 @@ This is a page about me with a few questions to test your knowledge about me.
 * http://www.w3schools.com/jsref/prop_html_classname.asp
 * https://developer.mozilla.org/en-US/docs/Web/API/Element/className
 * https://www.google.com/fonts
+* https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
 
 #####Author:
 * Geoffrey Cox

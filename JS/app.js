@@ -7,6 +7,8 @@
 //  ele.className('incorrect');
 // }
 
+// var img = new image();
+// variable .innerHTML += image url -not quite sure about this yet
 
 
 

@@ -66,13 +66,17 @@
   function game(q, ans, correct, wrong, invalid, element) {
     var userInput = prompt(q).toLowerCase();
     if (isNaN(parseInt(userInput))) {
-      if (userInput === ans || userInput === ans.substr(0,1)) {
+      if (userInput === ans) {
+        // || userInput === ans.substr(0,1)  Removed due to error that is occuring.
         element.textContent = correct;
+        element.className = 'right';
         score++;
       } else if (userInput !== ("no" || "n") && userInput !== ("yes" || "y")) {
         element.textContent = invalid;
+        element.className = 'notUsed';
       } else {
         element.textContent = wrong;
+        element.className = 'incorrect';
       }
     } else {
       while (parseInt(userInput) !== ans) {

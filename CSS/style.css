@@ -6,11 +6,9 @@
  color: red;
 }*/
 
-
-
 body {
   color: #3b3a36;
-  font-family: 'Josefin Sans';
+  /*font-family: 'Josefin Sans';*/
 }
 
 header {
@@ -47,4 +45,13 @@ footer div {
 
 .question {
   font-weight: bold;
+}
+.right {
+  color: green;
+}
+.incorrect {
+  color: red;
+}
+.notUsed {
+  color: blue;
 }

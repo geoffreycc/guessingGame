@@ -1,3 +1,16 @@
+// javascript
+// var ele = document.getElementById('text');
+//
+// if (you guess the right answer) {
+//  ele.className('correct');
+// } else {
+//  ele.className('incorrect');
+// }
+
+
+
+
+
 (function () {
   var userName = prompt("What is your name?");//creates the variable userName which will store the user input from the q.
   console.log("userName is " + userName);//displays in the developer console what the user input was.

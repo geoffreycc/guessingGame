@@ -9,7 +9,10 @@
 
 // var img = new image();
 // variable .innerHTML += image url -not quite sure about this yet
-
+// var corrAnImg = new image();
+// var wrngAnImg = new image();
+// var ntValdImg = new image();
+// var img = new image();      //not sure about these yet
 
 
 
@@ -72,13 +75,16 @@
         // || userInput === ans.substr(0,1)  Removed due to error that is occuring.
         element.textContent = correct;
         element.className = 'right';
+        document.getElementById("img").innerHTML += '<img src="Images/correct.png">'; //Testing this junk
         score++;
       } else if (userInput !== ("no" || "n") && userInput !== ("yes" || "y")) {
         element.textContent = invalid;
         element.className = 'notUsed';
+        document.getElementById('img').innerHTML += '<img src="Images/invalid.gif">';
       } else {
         element.textContent = wrong;
         element.className = 'incorrect';
+        document.getElementById('img').innerHTML += '<img src="Images/incorrect.png">';
       }
     } else {
       while (parseInt(userInput) !== ans) {

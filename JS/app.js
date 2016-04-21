@@ -18,9 +18,7 @@
 
 (function () {
   var userName = prompt("What is your name?");//creates the variable userName which will store the user input from the q.
-  console.log("userName is " + userName);//displays in the developer console what the user input was.
   var score = 0;//Creates the score variable that equals 0.
-  console.log("Current score is : " + score);//displays current score.
 
   var els = [
     document.getElementById("qOne"),
@@ -65,17 +63,15 @@
     "Sorry only 'yes' and 'no' are recognized.",
     "Ooops. Try using the number keys this time."
   ];
-
   var favColors = ["blue", "green", "red"];
 
   function game(q, ans, correct, wrong, invalid, element) {
     var userInput = prompt(q).toLowerCase();
     if (isNaN(parseInt(userInput))) {
-      if (userInput === ans) {
-        // || userInput === ans.substr(0,1)  Removed due to error that is occuring.
+      if (userInput === ans || userInput === ans.substr(0,1)) {  //error sometimes occurs
         element.textContent = correct;
         element.className = 'right';
-        document.getElementById("img").innerHTML += '<img src="Images/correct.png">'; //Testing this junk
+        document.getElementById("img").innerHTML += '<img src="Images/correct.png">';
         score++;
       } else if (userInput !== ("no" || "n") && userInput !== ("yes" || "y")) {
         element.textContent = invalid;
@@ -109,8 +105,6 @@
     game(questions[i], answer[i], corrAns[i], wrngAns[i], notValid[i], els[i]);
   }
 
-
-  //Stretch Goal
   var color = prompt("What is one of my favorite colors?").toLowerCase();
   for(var j = 0; j < favColors.length; j++) {
     if (color === favColors[j]) {

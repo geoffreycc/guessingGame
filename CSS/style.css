@@ -1,31 +1,36 @@
 body {
-  color: #3b3a36;
-  font-family: 'Josefin Sans';
+  font-family: 'Ubuntu', sans-serif;
+  color: #412402;
+  background-color: #CDE6F4;
 }
 
 header {
-  background-color: #c0dfd9;
-  width: auto;
-  border-radius: 50px;
+  background-color: #3B6A83;
   text-align: center;
   height: 90px;
-  line-height: 90px;
+  letter-spacing: -5px;
+  font-size: 45px;
+}
+
+main {
+  background-color: #9AB6C5;
 }
 
 section {
-  background-color: #e9ece5;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 5px;
   margin: 10px;
 }
 
- .info section {
-   display: inline-block;
-   width: 30%;
+.info {
+   display: inline-flex;
+   width: 31%;
+   height: 300px;
+   transform: translateX(15px);
  }
 
 footer {
-  background-color: #b3c2bf;
+  background-color: #3B6A83 /*b3c2bf*/;
   border-radius: 10px;
   padding: 5px;
   margin: 10px;
@@ -33,8 +38,35 @@ footer {
 
 footer div {
   display: inline-block;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+figure p {
+  background-color: #3B6A83;
+}
+
+.biography {
+  width: 850px;
 }
 
 .question {
   font-weight: bold;
+}
+
+.right {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+.notUsed {
+  color: blue;
+}
+
+#img{
+  padding-left: 300px;
+  float: inline-end;
 }

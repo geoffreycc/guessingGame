@@ -17,9 +17,8 @@
 
 
 (function () {
-  var userName = prompt("What is your name?");//creates the variable userName which will store the user input from the q.
-  var score = 0;//Creates the score variable that equals 0.
-
+  var userName = prompt("What is your name?");
+  var score = 0;
   var els = [
     document.getElementById("qOne"),
     document.getElementById("qTwo"),
@@ -28,35 +27,30 @@
     document.getElementById("qFive"),
     document.getElementById("numCorr")
   ];
-
   var questions = [
     userName + ", am I from Washington?",
     userName + ", did I work at Sega?",
     "Is painting one of my hobbies?",
     "How old am I?"
     ];
-
   var answer = [
     "yes",
     "no",
     "yes",
     29
   ];
-
   var corrAns = [
     "Great job " + userName + "!",
     "That is correct " + userName + ".",
     "That's right " + userName + " it sure is.",
     "Great job! I am 29 years old."
   ];
-
   var wrngAns = [
     "Sorry " + userName + " that is incorrect.",
     "I did not work at sega.",
     "Actually it is one of my hobbies.",
     "That's too low. Try again."
   ];
-
   var notValid = [
     "I'm sorry. The only accepted answers are 'yes' and 'no'.",
     "Only 'yes' and 'no' are accepted for this question.",
@@ -68,10 +62,10 @@
   function game(q, ans, correct, wrong, invalid, element) {
     var userInput = prompt(q).toLowerCase();
     if (isNaN(parseInt(userInput))) {
-      if (userInput === ans || userInput === ans.substr(0,1)) {  //error sometimes occurs
+      if (userInput === ans) {  //error sometimes occurs .substr not sure how to fix.
         element.textContent = correct;
         element.className = 'right';
-        document.getElementById("img").innerHTML += '<img src="Images/correct.png">';
+        document.getElementById("img").innerHTML = '<img src="Images/correct.png">';
         score++;
       } else if (userInput !== ("no" || "n") && userInput !== ("yes" || "y")) {
         element.textContent = invalid;

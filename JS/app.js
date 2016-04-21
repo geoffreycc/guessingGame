@@ -1,21 +1,3 @@
-// javascript
-// var ele = document.getElementById('text');
-//
-// if (you guess the right answer) {
-//  ele.className('correct');
-// } else {
-//  ele.className('incorrect');
-// }
-
-// var img = new image();
-// variable .innerHTML += image url -not quite sure about this yet
-// var corrAnImg = new image();
-// var wrngAnImg = new image();
-// var ntValdImg = new image();
-// var img = new image();      //not sure about these yet
-
-
-
 (function () {
   var userName = prompt("What is your name?");
   var score = 0;
@@ -62,7 +44,7 @@
   function game(q, ans, correct, wrong, invalid, element) {
     var userInput = prompt(q).toLowerCase();
     if (isNaN(parseInt(userInput))) {
-      if (userInput === ans) {  //error sometimes occurs .substr not sure how to fix.
+      if (userInput === ans) {
         element.textContent = correct;
         element.className = 'right';
         document.getElementById("img").innerHTML += '<img src="Images/correct.png">';

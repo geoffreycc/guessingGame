@@ -65,7 +65,7 @@
       if (userInput === ans) {  //error sometimes occurs .substr not sure how to fix.
         element.textContent = correct;
         element.className = 'right';
-        document.getElementById("img").innerHTML = '<img src="Images/correct.png">';
+        document.getElementById("img").innerHTML += '<img src="Images/correct.png">';
         score++;
       } else if (userInput !== ("no" || "n") && userInput !== ("yes" || "y")) {
         element.textContent = invalid;

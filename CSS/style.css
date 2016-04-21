@@ -1,17 +1,15 @@
 body {
-  /*color: #3b3a36;*/
   font-family: 'Ubuntu', sans-serif;
-  /*background-color: #FFE1C0;*/
   color: #412402;
   background-color: #CDE6F4;
 }
 
 header {
-  background-color: #3B6A83; /*c0dfd9*/
-/*  border-radius: 10px; */
+  background-color: #3B6A83;
   text-align: center;
   height: 90px;
-  /*line-height: 90px; Moves the name down lower in box*/
+  letter-spacing: -5px;
+  font-size: 45px;
 }
 
 main {
@@ -19,16 +17,12 @@ main {
 }
 
 section {
-  /*background-color: #e9ece5;*/
   border-radius: 5px;
   padding: 5px;
   margin: 10px;
-  /*height: 250px;
-  width: 400px;*/
 }
 
-.info /*section*/ {
-   /*display: inline-block;*/
+.info {
    display: inline-flex;
    width: 31%;
    height: 300px;
@@ -47,22 +41,31 @@ footer div {
   font-size: 12px;
   margin-top: 15px;
 }
-figure {
+
+figure p {
+  background-color: #3B6A83;
 }
-.qa {
+
+.biography {
+  width: 850px;
 }
+
 .question {
   font-weight: bold;
 }
+
 .right {
   color: green;
 }
+
 .incorrect {
   color: red;
 }
+
 .notUsed {
   color: blue;
 }
+
 #img{
   padding-left: 300px;
   float: inline-end;
